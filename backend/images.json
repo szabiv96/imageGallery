@@ -1,6 +1,43 @@
+[
 {
-    "url": "",
-    "title": "",
-    "uploadDate": "",
-    "phName": ""
+    "url": "01.png",
+    "title": "myArt",
+    "uploadDate": "2022-11-21",
+    "phName": "Szabolcs"
+},
+
+{
+    "url": "02.png",
+    "title": "poster",
+    "uploadDate": "2022-11-21",
+    "phName": "Szabolcs"
+},
+
+{
+    "url": "03.png",
+    "title": "magazine",
+    "uploadDate": "2022-11-21",
+    "phName": "Szabolcs"
+},
+
+{
+    "url": "04.png",
+    "title": "magazin02",
+    "uploadDate": "2022-11-21",
+    "phName": "Szabolcs"
+},
+
+{
+    "url": "05.png",
+    "title": "esther",
+    "uploadDate": "2022-11-21",
+    "phName": "Szabolcs"
+},
+
+{
+    "url": "06.png",
+    "title": "phallos",
+    "uploadDate": "2022-11-21",
+    "phName": "Szabolcs"
 }
+]
