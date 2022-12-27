@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Unbounded:wght@200;500&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header h1 {
+  font-family: "Unbounded", cursive;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+header button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  width: 200px;
+  border-style: solid;
+  border-radius: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+header a {
+  font: inherit;
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-top: 10px;
+  border-bottom: 10px;
+  opacity: 1;
+  transition: all 0.1s ease-in-out;
+  z-index: 1;
+}
+main .imageElement {
+  display: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+main .imageElement .deletePic {
+  margin-right: -50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -220px;
+  margin-left: 5px;
+  color: white;
+  background-color: gray;
+  cursor: crosshair;
+  font-family: "Oswald", sans-serif;
+  z-index: 3;
+}
+main .imageElement .imageCard {
+  width: 300px;
+  height: 300px;
+  display: inline-flex;
+  background-color: red;
+  opacity: 1;
+  transition: all 10s ease-in-out;
+  cursor: pointer;
+}
+main .imageElement .imageCard img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.uploadForm {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50%;
+  height: 50vh;
+  background-color: white;
+  box-shadow: 10px 10px 100px black;
+  display: flex !important;
+  z-index: 99 !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.uploadForm .closeUploadWindow {
+  background-color: red;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.uploadForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.uploadForm form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.visible {
+  display: flex !important;
+  z-index: 99 !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Swiper container stylng */
+.swiper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  z-index: 4;
+}
+.swiper #closeWindow {
+  z-index: 3;
+  position: fixed;
+  right: 20px;
+}
+.swiper #closeWindow h3 {
+  color: aliceblue;
+  font-family: "Unbounded", cursive;
+  cursor: pointer;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  outline: none;
+}
+
+div.swiper-button-next, div.swiper-button-prev {
+  top: 50%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
