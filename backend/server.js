@@ -5,7 +5,7 @@ const fs = require('fs');
 const { stringify } = require('querystring');
 
 const app = express();
-const port = 5003;
+const PORT = process.env.PORT || 5003;
 
 app.use(fileUpload());
 app.use(express.json());
@@ -86,7 +86,7 @@ app.all('*', (req, res) => {
     res.status(404).json('NOT FOUND!');
 });
 
-app.listen(port, () => {
-    console.log(`Server is on http://127.0.0.1:${port}`);
+app.listen(PORT, () => {
+    console.log(`Server is on ${PORT}`);
 })
 
